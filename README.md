@@ -37,7 +37,7 @@ cd FRESCO
     ```
     - Run `pip install -r requirements.txt` in an environment where torch is installed.
     - We have tested on python 3.12.2, torch 2.9.0 and diffusers 0.19.3
-    - If you use new versions of diffusers, you need to modify [my_forward()]()
+    - If you use new versions of diffusers, you need to modify [my_forward()](https://github.com/Sunnycookies/FRESCO/blob/6bc94a618ff654b2f669a46dedbf513278ed2f42/src/diffusion_hacked.py#L620)
 
 3. Run the installation script. The required models will be downloaded in `./model`, `./src/ControlNet/annotator` and `./src/ebsynth/deps/ebsynth/bin`.
     - Requires access to huggingface.co
@@ -54,7 +54,7 @@ python run_fresco.py ./config/config_bread.yaml
 
 5. For issues with Ebsynth, please refer to [issues](https://github.com/williamyang1991/Rerender_A_Video#issues)
 
-## (1) Inference
+## Inference
 
 We provide a flexible script `run_fresco.py` to run our method. Set the options via a config file. For example,
 
@@ -115,17 +115,6 @@ python video_blend.py ./result/bread/ --key keys --key_ind 0 11 23 33 49 60 72 8
 ```
 
 For the details, please refer to our previous work [Rerender-A-Video](https://github.com/williamyang1991/Rerender_A_Video/tree/main?tab=readme-ov-file#our-ebsynth-implementation). (The mainly difference is the way of specifying key frame index)
-
-## (2) Results
-
-### Long video translation
-
-
-
-### More results with text-guided video translation
-
-
-
 
 ## Citation
 
