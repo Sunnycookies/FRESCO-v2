@@ -1,0 +1,10 @@
+*.pth
+*.pyc
+
+.DS_Store
+.vscode/*
+model/*
+paras/*
+result/*
+src/ControlNet/annotator/ckpts/*
+src/ebsynth/deps/ebsynth/bin/*

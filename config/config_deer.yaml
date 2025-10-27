@@ -1,0 +1,50 @@
+# data
+file_path: 'data/deer.mp4'
+save_path: 'result/deer'
+
+# video2video translation
+use_fresco: True
+edit_mode: 'SDEdit' # 'SDEdit' 'pnp'
+synth_mode: 'ebsynth' # 'Tokenflow' 'ebsynth' 'None' 'Mixed'
+
+# keyframe selection
+keyframe_select_mode: 'fixed' # 'loop' 'fixed'
+keyframe_select_radix: 6
+primary_select: False
+mininterv: 4
+maxinterv: 4
+
+# diffusion
+seed: 1
+prompt: 'a white deer in the snow, cartoon, flat'
+sd_path: 'stablediffusionapi/flat-2d-animerge' 
+use_controlnet: True
+controlnet_type: 'canny'  # 'depth', 'canny'
+cond_scale: 1.0
+use_freeu: False
+a_prompt: ', best quality, extremely detailed'
+n_prompt: 'longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality'
+
+# video-to-video translation 
+batch_size: 4
+num_inference_steps: 20
+num_warmup_steps: 0
+end_opt_step: 40
+max_process: 1
+num_intraattn_steps: 1
+pnp_attn_t: 0.5
+pnp_f_t: 0.8
+temp_paras_save_path: 'paras'
+
+# supporting model
+gmflow_path: './model/gmflow_sintel-0c07dcb3.pth'
+sod_path: './model/epoch_resnet.pth'
+use_saliency: False
+
+# inversion
+use_inversion: False
+inv_latent_path: 'result/latents/deer/inv_step_500/latents'
+inv_inference_steps: 500
+inv_prompt: 'a deer in the snow'
+inv_batch_size: 20
+inv_save_path: 'result/latents/deer/inv_step_500'

@@ -1,0 +1,50 @@
+# data
+file_path: 'data/bread.mp4'
+save_path: 'result/bread'
+
+# video2video translation
+use_fresco: True
+edit_mode: 'pnp' # 'SDEdit' 'pnp'
+synth_mode: 'Tokenflow' # 'Tokenflow' 'ebsynth' 'None' 'Mixed'
+
+# keyframe selection
+keyframe_select_mode: 'loop' # 'loop' 'fixed'
+keyframe_select_radix: 6
+primary_select: False
+mininterv: 4
+maxinterv: 4
+
+# diffusion
+seed: 1
+prompt: 'an ice sculpture'
+sd_path: 'stabilityai/stable-diffusion-2-1-base' 
+use_controlnet: False
+controlnet_type: 'hed'  # 'depth', 'canny'
+cond_scale: 0.7
+use_freeu: False
+a_prompt: ''
+n_prompt: 'ugly, blurry, low res, unrealistic, unaesthetic'
+
+# video-to-video translation 
+batch_size: 4
+num_inference_steps: 20
+num_warmup_steps: 0
+end_opt_step: 40
+max_process: 1
+num_intraattn_steps: 0
+pnp_attn_t: 0.5
+pnp_f_t: 0.8
+temp_paras_save_path: 'paras'
+
+# supporting model
+gmflow_path: './model/gmflow_sintel-0c07dcb3.pth'
+sod_path: './model/epoch_resnet.pth'
+use_saliency: False
+
+# inversion
+use_inversion: True
+inv_latent_path: 'result/latents/bread/inv_step_500/latents'
+inv_inference_steps: 500
+inv_prompt: 'a bread'
+inv_batch_size: 20
+inv_save_path: 'result/latents/bread/inv_step_500'

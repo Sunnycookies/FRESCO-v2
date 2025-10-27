@@ -1,0 +1,50 @@
+# data
+file_path: ''
+save_path: ''
+
+# video translation
+use_fresco: True
+edit_mode: 'pnp' # 'SDEdit' 'pnp'
+synth_mode: 'Tokenflow' # 'Tokenflow' 'ebsynth' 'None' 'Mixed'
+
+# keyframe selection
+keyframe_select_mode: 'loop' # 'loop' 'fixed'
+keyframe_select_radix: 4
+primary_select: False
+mininterv: 4
+maxinterv: 4
+
+# diffusion
+seed: 0
+prompt: ''
+sd_path: 'stabilityai/stable-diffusion-2-1-base' 
+use_controlnet: False
+controlnet_type: 'hed'  # 'depth', 'canny'
+cond_scale: 0.7
+use_freeu: False
+a_prompt: ''
+n_prompt: ''
+
+# video translation 
+batch_size: 8
+num_inference_steps: 50
+num_warmup_steps: 0
+end_opt_step: 40
+max_process: 4
+num_intraattn_steps: 1
+pnp_attn_t: 0.5
+pnp_f_t: 0.8
+temp_paras_save_path: ''
+
+# supporting model
+gmflow_path: './model/gmflow_sintel-0c07dcb3.pth'
+sod_path: './model/epoch_resnet.pth'
+use_saliency: True
+
+# inversion
+use_inversion: True
+inv_latent_path: ''
+inv_inference_steps: 500
+inv_prompt: ''
+inv_batch_size: 40
+inv_save_path: ''

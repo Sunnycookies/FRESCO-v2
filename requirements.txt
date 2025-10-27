@@ -1,0 +1,10 @@
+diffusers[torch]==0.19.3
+transformers==4.39.3
+opencv-python==4.9.0.80
+einops==0.7.0
+matplotlib==3.8.4
+basicsr==1.4.2
+numba==0.59.1
+imageio-ffmpeg==0.4.9
+huggingface-hub==0.22.2
+timm==0.9.16
