@@ -10,7 +10,8 @@
 - **Robustness**: more robust to large and quick motion and long video translation compared with the [previous version](https://github.com/williamyang1991/FRESCO)
 - **Flexibility**: compatible with different frame manipulation ([Plug-and-Play](https://github.com/MichalGeyer/plug-and-play)) and synthesis ([TokenFlow](https://github.com/omerbt/TokenFlow)) methods compared with the [previous version](https://github.com/williamyang1991/FRESCO)
 
-![teasers](./assets/teaser.jpg)
+![teaser](https://github.com/user-attachments/assets/2fe83add-101a-470a-bfcb-90f5e5b1e3ad)
+
 
 ## Updates
 - [10/2025] Code is released.
@@ -117,6 +118,10 @@ python video_blend.py ./result/bread/ --key keys --key_ind 0 11 23 33 49 60 72 8
 For the details, please refer to our previous work [Rerender-A-Video](https://github.com/williamyang1991/Rerender_A_Video/tree/main?tab=readme-ov-file#our-ebsynth-implementation). (The mainly difference is the way of specifying key frame index)
 
 ## (2)Results
+
+### Long video manipulation
+
+https://github.com/user-attachments/assets/c6582b56-983d-4c04-b689-5ef2e0818508
 
 ### Text-guided video translation
 
