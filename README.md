@@ -54,7 +54,7 @@ python run_fresco.py ./config/config_bread.yaml
 
 5. For issues with Ebsynth, please refer to [issues](https://github.com/williamyang1991/Rerender_A_Video#issues)
 
-## Inference
+## (1)Inference
 
 We provide a flexible script `run_fresco.py` to run our method. Set the options via a config file. For example,
 
@@ -115,6 +115,13 @@ python video_blend.py ./result/bread/ --key keys --key_ind 0 11 23 33 49 60 72 8
 ```
 
 For the details, please refer to our previous work [Rerender-A-Video](https://github.com/williamyang1991/Rerender_A_Video/tree/main?tab=readme-ov-file#our-ebsynth-implementation). (The mainly difference is the way of specifying key frame index)
+
+## (2)Results
+
+### Text-guided video translation
+
+https://github.com/user-attachments/assets/3289a107-d152-46bb-a162-db461d2a35ab
+
 
 ## Citation
 
