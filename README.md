@@ -1,7 +1,7 @@
 # Zero-Shot Video Translation and Editing with Frame Spatial-Temporal Correspondence
 
 [Shuai Yang](https://williamyang1991.github.io/), [Junxin Lin](https://github.com/Sunnycookies), [Yifan Zhou](https://zhouyifan.net/), [Ziwei Liu](https://liuziwei7.github.io/) and [Chen Change Loy](https://www.mmlab-ntu.com/person/ccloy/)<br>
-[**Paper**]() | [**Project**](
+[**Paper**](https://arxiv.org/abs/2512.03905) | [**Project**](
 https://williamyang1991.github.io/projects/FRESCOv2/) |[**Input Data and Video Results**](https://drive.google.com/file/d/12LkAEmzRBgSMKqQqgHX5_LmhYI59ZRAZ/view?usp=sharing)<br>
 
 **Abstract:** *The remarkable success in text-to-image diffusion models has motivated extensive investigation of their potential for video applications. Zero-shot techniques aim to adapt image diffusion models for videos without requiring further model training. Recent methods largely emphasize integrating interframe correspondence into attention mechanisms. However, the soft constraint applied to identify the valid features to attend is insufficient, which could lead to temporal inconsistency. In this paper, we present FRESCO, which integrates intra-frame correspondence with inter-frame correspondence to formulate a more robust spatial-temporal constraint. This enhancement ensures a consistent transformation of semantically similar content between frames. Our method goes beyond attention guidance to explicitly optimize features, achieving high spatial-temporal consistency with the input video, significantly enhancing the visual coherence of manipulated videos. We verify FRESCO adaptations on two zero-shot tasks of video-to-video translation and text-guided video editing. Comprehensive experiments demonstrate the effectiveness of our framework in generating high-quality, coherent videos, highlighting a significant advance over current zero-shot methods.*
@@ -137,7 +137,7 @@ If you find this work useful for your research, please consider citing our paper
 @article{yang2025fresco,
  title = {Zero-Shot Video Translation and Editing with Frame Spatial-Temporal Correspondence},
  author = {Yang, Shuai and Lin, Junxin and Zhou, Yifan and Liu, Ziwei and Loy, Chen Change},
- journal = {arXiv},
+ journal = {arXiv preprint arXiv:2512.03905},
  year = {2025}
 }
 ```
